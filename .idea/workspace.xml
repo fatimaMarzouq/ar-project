@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8efc0112-65bd-4d4f-85b8-8edaae1fcaf8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/event/templates/Asset_new.html" beforeDir="false" afterPath="$PROJECT_DIR$/event/templates/Asset_new.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event/templates/_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/event/templates/_base.html" afterDir="false" />
-    </list>
+    <list default="true" id="8efc0112-65bd-4d4f-85b8-8edaae1fcaf8" name="Default Changelist" comment="base" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,6 +33,21 @@
       <option name="presentableId" value="Default" />
       <updated>1624270637823</updated>
     </task>
+    <task id="LOCAL-00001" summary="base">
+      <created>1624272641533</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1624272641533</updated>
+    </task>
+    <task id="LOCAL-00002" summary="base">
+      <created>1624273216841</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1624273216841</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -48,5 +60,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="base" />
+    <option name="LAST_COMMIT_MESSAGE" value="base" />
   </component>
 </project>
