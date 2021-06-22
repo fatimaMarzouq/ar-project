@@ -37,16 +37,12 @@
 <!--                        </label>-->
 <!--                        <input type="number" name="Latitude"  class="numberinput focus:outline-none leading-normal px-4 rounded-lg border-gray-300 appearance-none text-gray-700 w-full border block py-2 bg-white"  id="id_Latitude">-->
 <!--                        </div>-->
-                            <div class="input-number-tags">
-                                <p class="num-tags">1.</p>
-                                <p class="num-tags" id="2">2.</p>
-                            </div>
+
                             <div class="latitude-elements">
-                                <label for="id_Latitude">Latitude:</label>
-                                <input class="text-input coordinates-inputs is-latitude" type="number" name="Latitude" title="latitude1">
-                            </div>
-                            <div class="longitude-elements"><label for="id_Longitude">Longitude:</label>
-                                <input class="text-input coordinates-inputs is-longitude" type="text" id="longitude1" name="longitude" title="longitude1">
+                                <label for="latitude">Latitude:</label>
+                                <input class="text-input" type="text" id="latitude" onblur="check_lat_lon()" name="latitude" />                            </div>
+                            <div class="longitude-elements"><label for="longitude">Longitude:</label>
+                            <input class="text-input" type="text" id="longitude" onblur="check_lat_lon()" name="longitude" />
                             </div>
                    </div>
                 </div>
