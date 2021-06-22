@@ -1,4 +1,4 @@
-from django.http import HttpResponse, HttpResponseForbidden,HttpResponseRedirect
+from django.http import HttpResponse, HttpResponseForbidden
 from django.views.generic import TemplateView, ListView
 from .models import Event, Asset, Location
 from .forms import EventCreationForm, AssetCreationForm, LocationCreationForm 
@@ -29,11 +29,10 @@ class AssetCreateView(LoginRequiredMixin, CreateView):
         form.instance.user = self.request.user
         return super().form_valid(form)
 
-
 def asset_create(request):
     # if this is a POST request we need to process the form data
     if request.method == 'POST':
-        # create a form instance and populate it with data from the request:
+        print("hellos")
         form = AssetCreationForm(request.POST)
         # check whether it's valid:
         if form.is_valid():

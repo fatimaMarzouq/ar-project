@@ -16,11 +16,11 @@ class Asset(models.Model):
         # db_index=True,  # new
         default=uuid.uuid4,
         editable=False)
-    # user = models.ForeignKey(
-    #     User,
-    #     default=1,
-    #     on_delete=models.CASCADE,
-    # )
+#     user = models.ForeignKey(
+#         User,
+#         default=1,
+#         on_delete=models.CASCADE,
+#     )
     
     Asset_File = models.FileField(max_length=400,upload_to='Assets/', blank=True)
     # featured_image = models.ImageField(upload_to='covers/', blank=True)
@@ -55,11 +55,11 @@ class Location(models.Model):
         # db_index=True,  # new
         default=uuid.uuid4,
         editable=False)
-    user = models.ForeignKey(
-        User,
-        default=1,
-        on_delete=models.CASCADE,
-    )
+    # user = models.ForeignKey(
+    #     User,
+    #     default=1,
+    #     on_delete=models.CASCADE,
+    # )
     Name = models.CharField(max_length=200)
     Longitude = models.DecimalField(null=True, max_digits=10, decimal_places=5)
     Latitude = models.DecimalField(null=True, max_digits=10, decimal_places=5)
