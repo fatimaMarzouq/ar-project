@@ -4,6 +4,7 @@ from .models import CustomUser
 from phonenumber_field.widgets import PhoneNumberPrefixWidget
 from phonenumber_field.formfields import PhoneNumberField
 
+
 class CustomUserCreationForm(UserCreationForm):
 
     class Meta(UserCreationForm):
