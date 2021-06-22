@@ -191,11 +191,11 @@ SESSION_COOKIE_SECURE = env.bool("DJANGO_SESSION_COOKIE_SECURE", default=True)
 CSRF_COOKIE_SECURE = env.bool("DJANGO_CSRF_COOKIE_SECURE", default=True)
 
 
-import dj_database_url
-# db_from_env = dj_database_url.config()
+# import dj_database_url
+# # db_from_env = dj_database_url.config()
+# # DATABASES['default'].update(db_from_env)
+# # DATABASES['default']['CONN_MAX_AGE'] = 500
+#
+# db_from_env = dj_database_url.config(conn_max_age=600)
 # DATABASES['default'].update(db_from_env)
-# DATABASES['default']['CONN_MAX_AGE'] = 500
-
-db_from_env = dj_database_url.config(conn_max_age=600)
-DATABASES['default'].update(db_from_env)
 PHONENUMBER_DB_FORMAT = "INTERNATIONAL"
