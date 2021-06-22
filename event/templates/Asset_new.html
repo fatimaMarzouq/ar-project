@@ -2,7 +2,7 @@
 {% load static %}
 {% load crispy_forms_tags %}
 {% block content %}
-     <form class="creationForm my-6 w-2/3" method="POST"  enctype="multipart/form-data">{% csrf_token %}
+    <form class="creationForm my-6 w-2/3" method="POST"  enctype="multipart/form-data">{% csrf_token %}
 
     <div class="pages-content">
         <back-anchor assetsUrl="https://softylus.com/studio-master/assets"></back-anchor>
@@ -31,15 +31,19 @@
                 </p>
                 <div class="coordinates-input-wrapper creationForm">
                     <div class="coordinates-input-container">
-                        <!-- <div>
-                            <label for="latitude">Latitude:</label>
-                            <input  name="Latitude"   />
+                        <div id="div_id_Longitude" class="mb-3">
+                            <label for="id_Longitude" class="block text-gray-700 text-sm font-bold mb-2">
+                            Longitude
+                        </label>
+                        <input type="number" name="Longitude" class="numberinput focus:outline-none leading-normal px-4 rounded-lg border-gray-300 appearance-none text-gray-700 w-full border block py-2 bg-white"  id="id_Longitude">
                         </div>
-                        <div>
-                            <label for="longitude">Longitude:</label>
-                            <input  name="Longitude" />
-                        </div> -->
-                   </div> 
+                            <div id="div_id_Latitude" class="mb-3">
+                            <label for="id_Latitude" class="block text-gray-700 text-sm font-bold mb-2">
+                            Latitude
+                        </label>
+                        <input type="number" name="Latitude"  class="numberinput focus:outline-none leading-normal px-4 rounded-lg border-gray-300 appearance-none text-gray-700 w-full border block py-2 bg-white"  id="id_Latitude">
+                        </div>
+                   </div>
                 </div>
             </div>
         </div>
@@ -65,27 +69,44 @@
                 </ul>
                 </p>
                 <label class="passive-button file-input">
-                    <input id="content-file" accept="*" type="file" name="Asset_File"  onchange="handleContentUpload(this)" />
+                    <input id="content-file"   class="clearablefileinput " accept="*" type="file" name="Asset_File" hidden onchange="handleContentUpload(this)" />
                     Upload file
                 </label>
                 <p id="content-error" class="error"></p>
             </div>
             <div id="content-preview" target="content-file">
             </div>
-       
+
         </div>
       </div>
-    <div class="creationForm grid grid-cols-2 gap-4">
-        <input name="Longitude" type="text">
-        <input name="Latitude" type="text">
-       <input id="content-file" accept="*" type="file" name="Asset_File"  onchange="handleContentUpload(this)" /> 
+  <div class="creationForm grid grid-cols-2 gap-4">
 
-         {{ form|crispy }}
+
+
+
+<!-- <div id="div_id_Asset_File" class="mb-3">
+    <label for="id_Asset_File" class="block text-gray-700 text-sm font-bold mb-2">
+            Asset file
+         </label>
+          <input type="file" name="Asset_File" class="clearablefileinput " id="id_Asset_File">
+           </div> -->
+
+         <div id="div_id_Expiry_date" class="mb-3">
+              <label for="id_Expiry_date" class="block text-gray-700 text-sm font-bold mb-2">
+            Expiry date
+        </label>
+        <input type="date" name="Expiry_date" class="datepicker1 dateinput focus:outline-none leading-normal px-4 rounded-lg border-red-500 appearance-none text-gray-700 w-full border block py-2 bg-white" placeholder="Select Date"  id="id_Expiry_date">
+
+             </div>
+              <div id="div_id_Expiry_time" class="mb-3">
+                   <label for="id_Expiry_time" class="block text-gray-700 text-sm font-bold mb-2">
+            Expiry time
+         </label>
+          <input type="time" name="Expiry_time" class="timeinput focus:outline-none leading-normal px-4 rounded-lg border-red-500 appearance-none text-gray-700 w-full border block py-2 bg-white"  id="id_Expiry_time"> <p id="error_1_id_Expiry_time" class="text-red-500 text-xs italic">
+              <strong>This field is required.</strong></p>
+            </div>
+
     </div>
-<div class="p-4 flex justify-end">
-        <button class="bg-purple-800 text-white px-16 py-3 rounded outline-none block" type="submit">Save</button>
-</div>
+    <button value="submit" name="Submit">submit</button>
   </form>
-    <page-footer></page-footer>
-    <feedback-button></feedback-button>
 {% endblock content %}
