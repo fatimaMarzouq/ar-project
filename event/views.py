@@ -35,13 +35,13 @@ def asset_create(request):
     form = AssetCreationForm(request.POST or None, request.FILES)
     if request.method == 'POST':
         if form.is_valid():
-            instance = AssetCreationForm(file_field=request.FILES['Asset_file'])
-            print(instance)
             form.save()
-            return redirect('/thanks')
+            return redirect('/')
     else:
         context = {"form": form}
-        return render(request, "Asset_new.html", context)
+    return render(request, "Asset_new.html", context)
+
+
 # def asset_create(request):
 #     # if this is a POST request we need to process the form data
 #     print("hello")
