@@ -34,12 +34,12 @@ class AssetListView(ListView):
 def asset_create(request):
     form = AssetCreationForm(request.POST, request.FILES)
     if form.is_valid():
-        handle_uploaded_file(request.FILES['Asset_File'])
+        # handle_uploaded_file(request.FILES['Asset_File'])
         print(form.request)
         form.save()
-        return redirect('/')
+        return redirect('/thanks')
     else:
-        print("smth error")
+        print(form.errors)
     context = {"form": form}
     return render(request, "Asset_new.html", context)
 
