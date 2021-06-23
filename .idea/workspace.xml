@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8efc0112-65bd-4d4f-85b8-8edaae1fcaf8" name="Default Changelist" comment="ثيقاب">
+    <list default="true" id="8efc0112-65bd-4d4f-85b8-8edaae1fcaf8" name="Default Changelist" comment="z z">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event/templates/Asset_new.html" beforeDir="false" afterPath="$PROJECT_DIR$/event/templates/Asset_new.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event/templates/_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/event/templates/_base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624363542865</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="z z">
+      <created>1624366108745</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1624366108745</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -164,6 +170,7 @@
     <MESSAGE value="kkj" />
     <MESSAGE value="kkjxs" />
     <MESSAGE value="ثيقاب" />
-    <option name="LAST_COMMIT_MESSAGE" value="ثيقاب" />
+    <MESSAGE value="z z" />
+    <option name="LAST_COMMIT_MESSAGE" value="z z" />
   </component>
 </project>

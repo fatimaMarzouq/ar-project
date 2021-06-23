@@ -42,8 +42,6 @@ def asset_create(request):
     else:
         context = {"form": form}
         return render(request, "Asset_new.html", context)
-
-
 # def asset_create(request):
 #     # if this is a POST request we need to process the form data
 #     print("hello")
